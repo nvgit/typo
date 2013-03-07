@@ -1,0 +1,12 @@
+<div class=''>
+  <h4><%= 'Merge Articles' %></h4>
+  <%= form_tag do %>
+    <p>
+      Article ID: 
+      <%= text_field_tag 'merge_with' %>
+    </p>
+    <p>
+      <%= submit_tag 'Merge' %>
+    </p>
+  <% end %>
+</div> 

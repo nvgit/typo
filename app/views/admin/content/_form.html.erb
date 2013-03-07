@@ -148,15 +148,12 @@
     </ul>
   </div>    
 
-    <div class=''>
-    <h4><%= _("Merge Articles") %></h4>
-    <p class='help-block'>Merged articles will be shown on the view article page.</p>
-    <ul id='merge_with' class='inputs-list'>
-      <%= render 'admin/content/merge' %>
-    </ul>
-  </div>  
-
+  <div>
+    <% if current_user[:profile_id].to_s == "1" %>
+      <%= render 'admin/content/merge_articles' %>
+    <% end %>
   </div>
 
 </div>
+
 
