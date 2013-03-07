@@ -147,13 +147,6 @@
       <%= render 'admin/content/attachment', { :attachment_num => 1, :hidden => false } -%>
     </ul>
   </div>    
-
-  <div>
-    <% if current_user[:profile_id].to_s == "1" %>
-      <%= render 'admin/content/merge_articles' %>
-    <% end %>
-  </div>
-
 </div>
 
 
